@@ -3,63 +3,61 @@
 > **En esta práctica todo es tuyo:** el análisis, la receta, el código y las pruebas. Llena cada sección en la fase que se indica.
 
 ## 1. Descripción del problema (Fase 1)
-<!-- Explica con tus palabras qué hace tu programa y para qué serviría en la vida real. Máximo 4 líneas. -->
-
-_____
+Este programa te pide 3 numeros y te muestra cual de los 3 es el mas grande.
 
 ## 2. Entradas y salidas (Fase 1)
 <!-- Define cada entrada y cada salida, con su tipo de dato y su objetivo. -->
 
 **Entradas:**
-1. _____
-2. _____
-3. _____
+1. Primer número (double): primer valor que escribe el usuario para comparar.
+2. Segundo número (double): segundo valor que escribe el usuario para comparar.
+3. Tercer número (double): tercer valor que escribe el usuario para comparar.
 
 **Salida:**
-1. _____
+1. Número mayor (double): el numero más grande de los tres.
 
 **¿Muestro el valor del mayor o cuál de los tres fue (primero, segundo o tercero)? ¿Por qué?**
-_____
+Muestro el valor del mayor, porque en un caso como 7, 7, 3 el primero y el segundo son el mayor, y no tendría que escoger entre los dos ya que el valor siempre es uno solo (7).
 
 **¿Qué función de `utilerias.h` uso para leer los números? ¿Por qué esa y no la otra?**
-_____
+utilizaria leerDecimal porque si utilizara un numero como el 2.5 con leerEntero no lo acaptaria.
 
 ## 3. Restricciones e invariante (Fases 1 y 2)
 
 **Restricciones** (¿qué debe cumplirse?):
-- _____
-- _____
+- deben ser numeros no letras
+- el programa siempre debe mostrar un solo resultado
 
 **¿Hace falta validar el rango de los números (por ejemplo, rechazar el 0 o los negativos)? ¿Por qué?**
-_____
+No, porque son numeros reales
 
 **¿Qué hace mi programa cuando dos números son iguales y son los mayores? ¿Y cuando los tres son iguales?**
-_____
+Muestra el valor del mayor una sola vez por ejemplo con 7, 7, 3 muestra 7 y con 5, 5, 5 muestra 5".
 
 **¿Quién detecta cada error?** (¿qué revisa la función de `utilerias.h` y qué reviso yo?)
-_____
+leerDecimal detecta si escriben letras y vuelve a pedir el dato.
 
 **Invariante** (justo antes de mostrar el resultado, ¿qué es seguro sobre el valor que voy a mostrar?):
-_____
+Que siemore se mostrara el numero mas grande
 
 ## 4. Casos resueltos a mano (Fase 1)
 
 | Caso | Número 1 | Número 2 | Número 3 | Mayor calculado a mano |
 |---|---|---|---|---|
-| 1 (el mayor en primera posición) | _____ | _____ | _____ | _____ |
-| 2 (el mayor en segunda posición) | _____ | _____ | _____ | _____ |
-| 3 (el mayor en tercera posición) | _____ | _____ | _____ | _____ |
-| 4 (con un empate) | _____ | _____ | _____ | _____ |
-| 5 (con negativos) | _____ | _____ | _____ | _____ |
+| 1 (el mayor en primera posición) | 7 | 4 | 2 | 7 |
+| 2 (el mayor en segunda posición) | 5 | 9 | 3 | 9 |
+| 3 (el mayor en tercera posición) | 6 | 4 | 8 | 8 |
+| 4 (con un empate) | 7 | 7 | 3 | 7 |
+| 5 (con negativos) | -1 | -3 | -5 | -1 |
 
 ## 5. Receta en pseudocódigo (Fase 2)
 <!-- Tu receta va en el archivo RECETA.md. Aquí solo responde las preguntas. -->
 
-**¿Probé mi receta a mano con mis 5 casos?** Sí / No
-**¿Tuve que corregirla? ¿Qué cambié?** _____
-**¿Cuántas versiones de mi receta escribí hasta la final?** _____
+**¿Probé mi receta a mano con mis 5 casos?** Sí 
+**¿Tuve que corregirla? ¿Qué cambié?** No
+**¿Cuántas versiones de mi receta escribí hasta la final?** una
 **¿Se me ocurrió otra forma de resolver el problema? ¿Cuál? ¿Por qué elegí la que usé?**
-_____
+No
 
 ## 6. Cómo compilar y ejecutar (Fase 3)
 
