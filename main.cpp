@@ -10,6 +10,13 @@ int main() {
     numero1 = leerDecimal("Escribe el primer numero: ");
     numero2 = leerDecimal("Escribe el segundo numero: ");
     numero3 = leerDecimal("Escribe el tercer numero: ");
-    std::cout << "numeros " << numero1 << ", " << numero2 << ", " << numero3 << "\n";
+    if (numero1 >= numero2 && numero1 >= numero3) {
+        std::cout << "El numero mayor es: " << numero1 << "\n";
+    } else if (numero2 >= numero1 && numero2 >= numero3) {
+        std::cout << "El numero mayor es: " << numero2 << "\n";
+    } else {
+        std::cout << "El numero mayor es: " << numero3 << "\n";
+    }
+
     return 0;
 }
